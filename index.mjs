@@ -1,7 +1,7 @@
 import express from 'express'
 import http from 'http'
 // import {Server} from 'socket.io'
-import cors from 'cors'
+// import cors from 'cors'
 import router from './src/routes/index.js'
 import dotenv from "dotenv";
 dotenv.config()
@@ -17,7 +17,7 @@ const server = http.createServer(app)
 
 const port = 5000
 app.use(express.json())
-app.use(cors())
+// app.use(cors())
 
 app.use('/', (req, res) => {
     res.send('Hello world')
