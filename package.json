@@ -5,6 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "start": "nodemon index.mjs",
+    "build": "npx prisma db push",
     "client": "npm start --prefix ../client",
     "dev": "concurrently \"npm start\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
